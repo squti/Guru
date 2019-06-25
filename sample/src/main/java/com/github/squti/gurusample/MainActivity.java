@@ -24,13 +24,53 @@
 package com.github.squti.gurusample;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.github.squti.guru.Guru;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editText;
+    Button buttonPutString;
+    Button buttonGetString;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        context = this;
+        editText = findViewById(R.id.editText);
+        buttonPutString = findViewById(R.id.buttonPutString);
+        buttonGetString = findViewById(R.id.buttonGetString);
+
+        buttonPutString.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String text = editText.getText().toString();
+
+                Guru.putString("TEST_KEY" , text);
+
+                Toast.makeText(context, "String added to SharedPreferences", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        buttonGetString.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String text = Guru.getString("TEST_KEY", "default");
+
+                Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
