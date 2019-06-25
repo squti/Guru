@@ -61,7 +61,7 @@ public class GuruConfig {
         private int mode = Context.MODE_PRIVATE;
 
         public Builder setFileName(String preferenceFileKey) {
-            this.fileName = BuildConfig.APPLICATION_ID + preferenceFileKey;
+            this.fileName = preferenceFileKey;
             return this;
         }
 
