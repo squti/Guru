@@ -37,7 +37,7 @@ import androidx.annotation.RestrictTo;
 import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 @RestrictTo(LIBRARY)
-public final class GuruProvider extends ContentProvider {
+final class GuruProvider extends ContentProvider {
 
     @SuppressLint("StaticFieldLeak") static Context context;
     @Override
