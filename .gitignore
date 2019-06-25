@@ -5,8 +5,8 @@
 bin/
 gen/
 out/
-app/release/
-app/develop/
+sample/release/
+sample/develop/
 .gradle/
 build/
 local.properties
