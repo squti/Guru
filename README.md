@@ -1,13 +1,29 @@
 # Guru
 
-Guru is a handy and powerful library to work with key-value storages in Android
+Guru is a handy and powerful library to work with key-value storages in Android <br/><br/><br/>
 <p align="center">
-  <img width="500" height="170" src="https://raw.githubusercontent.com/squti/Guru/master/static/guru_logo.png">
+  <img width="400" height="100" src="https://raw.githubusercontent.com/squti/Guru/master/static/guru_logo.png">
 </p>
-
+<br/><br/>
 
 This library is an efficient and super easy way to use Android Shared Preferences without complexity and supports all of it functionalities.
 
+### Download
+Step 1. Add it in your root (Project) build.gradle at the end of repositories:
+```groovy
+allprojects {
+        repositories {
+            ...
+            maven { url "https://jitpack.io" }
+        }
+    }
+```
+Step 2. Add the dependency
+```groovy
+	dependencies {
+	        implementation 'com.github.squti:Guru:1.0.1'
+	}
+```
 
 ### Usage
 There is no need to initialize or config Guru. Just call it methods directly anywhere.
