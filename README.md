@@ -1,5 +1,6 @@
 # Guru
 [![](https://jitpack.io/v/squti/Guru.svg)](https://jitpack.io/#squti/Guru)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Guru-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7728)
 
 Guru is a handy and powerful library to work with key-value storages in Android <br/><br/><br/>
 <p align="center">
