@@ -57,7 +57,7 @@ public class GuruConfig {
     }
 
     public static class Builder {
-        private String fileName = BuildConfig.APPLICATION_ID + ".Default_App_Preference";
+        private String fileName = BuildConfig.LIBRARY_PACKAGE_NAME + ".Default_App_Preference";
         private int mode = Context.MODE_PRIVATE;
 
         public Builder setFileName(String preferenceFileKey) {
