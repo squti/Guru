@@ -25,7 +25,7 @@ allprojects {
 Step 3. Add the dependency
 ```gradle
 dependencies{
-    implementation'com.github.squti:Guru:1.1.5'
+    implementation'com.github.squti:Guru:1.2.0'
 }
 ```
 
